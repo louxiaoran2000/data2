@@ -1,0 +1,3 @@
+{"instruction": "问题一", "response": "回答一", "category": "open_qa"}
+{"instruction": "问题二", "response": "回答二", "category": "math"}
+{"instruction": "问题三", "response": "回答三", "category": "closed_qa"}

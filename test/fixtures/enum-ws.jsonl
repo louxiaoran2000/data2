@@ -1,0 +1,5 @@
+{"category": "open_qa", "t": "正常合法"}
+{"category": " ", "t": "纯空白-不算枚举违规"}
+{"category": "math", "t": "非法值"}
+{"category": " closed_qa ", "t": "带空白合法值-trim后放行"}
+{"category": " math ", "t": "带空白非法值-trim后仍非法"}

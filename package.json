@@ -1,0 +1,16 @@
+{
+  "name": "datalint",
+  "version": "1.0.0",
+  "description": "JSONL 数据质检与统计命令行工具（仅依赖 Node 标准库）",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "datalint": "bin/datalint.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

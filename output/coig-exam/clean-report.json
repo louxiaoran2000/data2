@@ -1,0 +1,46 @@
+{
+  "tool": "datalint",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-29T14:52:27.748Z",
+  "mode": "clean",
+  "input": {
+    "files": [
+      "input/coig-exam.jsonl"
+    ]
+  },
+  "outputs": {
+    "cleaned": "output/coig-exam/cleaned.jsonl",
+    "rejected": "output/coig-exam/rejected.jsonl",
+    "report": "output/coig-exam/clean-report.json"
+  },
+  "rules": {
+    "required": [
+      "textbox_question",
+      "textbox_answer"
+    ],
+    "minLen": null,
+    "maxLen": null,
+    "enums": {
+      "subject": [
+        "英语",
+        "生物",
+        "语文",
+        "政治",
+        "历史",
+        "地理"
+      ]
+    },
+    "dedup": "规范化整行（键排序 + trim 后比较）",
+    "fix": "字符串字段 trim"
+  },
+  "stats": {
+    "lines": 63532,
+    "kept": 62232,
+    "dropped": 1300,
+    "fixedTrim": 10710,
+    "reasons": {
+      "duplicate": 1300
+    },
+    "dropRate": 0.0205
+  }
+}

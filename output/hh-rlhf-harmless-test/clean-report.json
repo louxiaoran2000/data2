@@ -1,0 +1,35 @@
+{
+  "tool": "datalint",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-29T14:52:27.882Z",
+  "mode": "clean",
+  "input": {
+    "files": [
+      "input/hh-rlhf-harmless-test.jsonl.gz"
+    ]
+  },
+  "outputs": {
+    "cleaned": "output/hh-rlhf-harmless-test/cleaned.jsonl",
+    "rejected": "output/hh-rlhf-harmless-test/rejected.jsonl",
+    "report": "output/hh-rlhf-harmless-test/clean-report.json"
+  },
+  "rules": {
+    "required": [
+      "chosen",
+      "rejected"
+    ],
+    "minLen": null,
+    "maxLen": null,
+    "enums": {},
+    "dedup": "规范化整行（键排序 + trim 后比较）",
+    "fix": "字符串字段 trim"
+  },
+  "stats": {
+    "lines": 2312,
+    "kept": 2312,
+    "dropped": 0,
+    "fixedTrim": 4624,
+    "reasons": {},
+    "dropRate": 0
+  }
+}

@@ -1,0 +1,3 @@
+{"text": "你好世界", "label": "pos", "score": 0.9}
+{"text": "hello world", "label": "neg", "score": 0.1}
+{"text": "", "label": "pos", "score": null}

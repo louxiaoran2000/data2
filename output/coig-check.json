@@ -1,0 +1,273 @@
+{
+  "tool": "datalint",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-29T14:52:26.198Z",
+  "summary": {
+    "files": 1,
+    "totalLines": 63532,
+    "emptyLines": 0,
+    "validRecords": 63532,
+    "objectRecords": 63532,
+    "nonObjectRecords": 0,
+    "parseErrors": 0,
+    "duplicateRecords": 1142,
+    "parseErrorRate": 0,
+    "fieldCount": 6
+  },
+  "files": [
+    {
+      "path": "input/coig-exam.jsonl",
+      "lines": 63532,
+      "empty": 0,
+      "valid": 63532,
+      "parseErrors": 0
+    }
+  ],
+  "fields": [
+    {
+      "name": "subject",
+      "count": 63532,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 63532
+      },
+      "typeConsistent": true,
+      "emptyStrings": 0,
+      "nulls": 0,
+      "length": {
+        "min": 2,
+        "max": 2,
+        "avg": 2
+      }
+    },
+    {
+      "name": "textbox_answer",
+      "count": 63532,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 63532
+      },
+      "typeConsistent": true,
+      "emptyStrings": 0,
+      "nulls": 0,
+      "length": {
+        "min": 1,
+        "max": 1569,
+        "avg": 20.2368
+      }
+    },
+    {
+      "name": "textbox_q_instruction",
+      "count": 63532,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 63532
+      },
+      "typeConsistent": true,
+      "emptyStrings": 0,
+      "nulls": 0,
+      "length": {
+        "min": 2,
+        "max": 1524,
+        "avg": 14.5837
+      }
+    },
+    {
+      "name": "textbox_question",
+      "count": 63532,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 63532
+      },
+      "typeConsistent": true,
+      "emptyStrings": 0,
+      "nulls": 0,
+      "length": {
+        "min": 4,
+        "max": 3339,
+        "avg": 116.9827
+      }
+    },
+    {
+      "name": "textbox_answer_analysis",
+      "count": 62651,
+      "missing": 881,
+      "presenceRate": 0.9861,
+      "types": {
+        "string": 32029,
+        "array": 30622
+      },
+      "typeConsistent": false,
+      "emptyStrings": 1,
+      "nulls": 0,
+      "length": {
+        "min": 1,
+        "max": 5508,
+        "avg": 164.3306
+      }
+    },
+    {
+      "name": "textbox_q_context",
+      "count": 62651,
+      "missing": 881,
+      "presenceRate": 0.9861,
+      "types": {
+        "array": 39703,
+        "string": 22948
+      },
+      "typeConsistent": false,
+      "emptyStrings": 8,
+      "nulls": 0,
+      "length": {
+        "min": 1,
+        "max": 4131,
+        "avg": 564.5077
+      }
+    }
+  ],
+  "uniqueness": {
+    "textbox_question": {
+      "distinctValues": 59638,
+      "duplicateValues": 3288,
+      "involvedRecords": 7182,
+      "top": [
+        {
+          "value": "A. That's what they are for. B. Turn to an online instructor for help. C. If more information is needed, they will ask.…",
+          "count": 15,
+          "samples": [
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 2578
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 2592
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 2598
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 2616
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 2645
+            }
+          ]
+        },
+        {
+          "value": "A. This can affect your work. B. So how should you motivate yourself? C. However, this should not discourage you. D. So…",
+          "count": 15,
+          "samples": [
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 12057
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 12058
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 12069
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 12147
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 12174
+            }
+          ]
+        },
+        {
+          "value": "A On the first day of my first grade, I stood by the door with butterflies in my stomach. I ___1___(voice)my biggest co…",
+          "count": 10,
+          "samples": [
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 8274
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 8281
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 8301
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 8305
+            },
+            {
+              "file": "input/coig-exam.jsonl",
+              "line": 8308
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "enums": {
+    "subject": {
+      "allowed": [
+        "英语",
+        "生物",
+        "语文",
+        "政治",
+        "历史",
+        "地理"
+      ],
+      "invalidValues": 0,
+      "invalidRecords": 0,
+      "top": []
+    }
+  },
+  "parseErrorSamples": [],
+  "parseErrorSampleTotal": 0,
+  "issues": [
+    {
+      "level": "warn",
+      "code": "TYPE_INCONSISTENT",
+      "field": "textbox_answer_analysis",
+      "message": "字段 \"textbox_answer_analysis\" 类型不一致：string×32029, array×30622"
+    },
+    {
+      "level": "warn",
+      "code": "FIELD_MISSING",
+      "field": "textbox_answer_analysis",
+      "message": "字段 \"textbox_answer_analysis\" 缺失 881 条（覆盖率 98.61%）"
+    },
+    {
+      "level": "warn",
+      "code": "TYPE_INCONSISTENT",
+      "field": "textbox_q_context",
+      "message": "字段 \"textbox_q_context\" 类型不一致：array×39703, string×22948"
+    },
+    {
+      "level": "warn",
+      "code": "FIELD_MISSING",
+      "field": "textbox_q_context",
+      "message": "字段 \"textbox_q_context\" 缺失 881 条（覆盖率 98.61%）"
+    },
+    {
+      "level": "warn",
+      "code": "FIELD_DUPLICATE",
+      "field": "textbox_question",
+      "message": "字段 \"textbox_question\" 存在重复取值：3288 个值重复，涉及 7182 条记录"
+    },
+    {
+      "level": "warn",
+      "code": "DUPLICATE",
+      "message": "完全重复记录 1142 条（跨文件去重口径）"
+    }
+  ]
+}

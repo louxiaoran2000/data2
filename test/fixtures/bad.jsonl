@@ -1,0 +1,6 @@
+{"text": "ok", "label": "pos"}
+not a json
+{"text": "missing label"}
+
+{"text": "ok", "label": "pos"}
+{"text": 123, "label": "pos"}

@@ -1,0 +1,99 @@
+{
+  "tool": "datalint",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-29T13:51:46.329Z",
+  "summary": {
+    "files": 1,
+    "totalLines": 15003,
+    "emptyLines": 0,
+    "validRecords": 15003,
+    "objectRecords": 15003,
+    "nonObjectRecords": 0,
+    "parseErrors": 0,
+    "duplicateRecords": 0,
+    "parseErrorRate": 0,
+    "fieldCount": 4
+  },
+  "files": [
+    {
+      "path": "output/cleaned.jsonl",
+      "lines": 15003,
+      "empty": 0,
+      "valid": 15003,
+      "parseErrors": 0
+    }
+  ],
+  "fields": [
+    {
+      "name": "category",
+      "count": 15003,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 15003
+      },
+      "typeConsistent": true,
+      "emptyStrings": 0,
+      "nulls": 0,
+      "length": {
+        "min": 7,
+        "max": 22,
+        "avg": 11.7827
+      }
+    },
+    {
+      "name": "context",
+      "count": 15003,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 15003
+      },
+      "typeConsistent": true,
+      "emptyStrings": 10540,
+      "nulls": 0,
+      "length": {
+        "min": 0,
+        "max": 23505,
+        "avg": 352.8542
+      }
+    },
+    {
+      "name": "instruction",
+      "count": 15003,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 15003
+      },
+      "typeConsistent": true,
+      "emptyStrings": 0,
+      "nulls": 0,
+      "length": {
+        "min": 4,
+        "max": 11698,
+        "avg": 71.8534
+      }
+    },
+    {
+      "name": "response",
+      "count": 15003,
+      "missing": 0,
+      "presenceRate": 1,
+      "types": {
+        "string": 15003
+      },
+      "typeConsistent": true,
+      "emptyStrings": 0,
+      "nulls": 0,
+      "length": {
+        "min": 1,
+        "max": 26018,
+        "avg": 358.1462
+      }
+    }
+  ],
+  "parseErrorSamples": [],
+  "parseErrorSampleTotal": 0,
+  "issues": []
+}

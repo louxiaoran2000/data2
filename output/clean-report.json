@@ -1,0 +1,36 @@
+{
+  "tool": "datalint",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-29T13:56:15.327Z",
+  "mode": "clean",
+  "input": {
+    "files": [
+      "input/databricks-dolly-15k.jsonl"
+    ]
+  },
+  "outputs": {
+    "cleaned": "output/cleaned.jsonl",
+    "rejected": "output/rejected.jsonl",
+    "report": "output/clean-report.json"
+  },
+  "rules": {
+    "required": [
+      "instruction",
+      "response"
+    ],
+    "minLen": null,
+    "maxLen": null,
+    "dedup": "规范化整行（键排序 + trim 后比较）",
+    "fix": "字符串字段 trim"
+  },
+  "stats": {
+    "lines": 15011,
+    "kept": 15003,
+    "dropped": 8,
+    "fixedTrim": 14,
+    "reasons": {
+      "duplicate": 8
+    },
+    "dropRate": 0.0005
+  }
+}
