@@ -1,0 +1,8 @@
+{"id": 1, "text": "今天天气不错", "label": "weather", "score": 0.98}
+{"id": 2, "text": "这道菜很好吃", "label": "food"}
+{"id": 3, "text": "股价上涨了", "label": "finance", "score": 0.87}
+{"id": 4, "text": "缺少结束的引号, "label": "broken"}
+{"id": 5, "label": "sports", "text": "昨晚的比赛很精彩", "score": 0.76, "reviewed": true}
+["not", "an", "object"]
+{"id": 7, "text": "", "label": "other", "score": null}
+{"id": 8, "text": "冗余字段测试", "label": "test", "extra": {"nested": true}, "score": 0.55}
